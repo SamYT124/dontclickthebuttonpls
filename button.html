@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>DON'T CLICK THIS BUTTON</h1>
+        <button type="button" onclick="myFunction()">don't click this button</button>
+
+    <p id="demo">no</p>
+
+     <script>
+      let count = 0; 
+
+    function myFunction() {
+      count++;
+      const demo = document.getElementById("demo");
+
+    if (count > 10) {
+        const quotes2 = ["BRO", "STOP", "PLEASE", "AAAAAAAAAAAAA", "NO", "STOP, NOW", "STOOOOOOP"];
+        const randomIndex2 = Math.floor(Math.random() * quotes2.length);
+        demo.innerHTML = quotes2[randomIndex2];
+    } else {
+        const quotes = ["bro", "pls stop", "fuck you", "no like actually stop", "eeugeheueguegeuh", "thats not cool, that not, no", "thats not nice"];
+        const randomIndex = Math.floor(Math.random() * quotes.length);
+        demo.innerHTML = quotes[randomIndex];
+    }
+    }
+        </script>
+    </body>
+</html>
